@@ -21,9 +21,11 @@ jobs:
           distribution: 'temurin'
       - name: Build SpringBoot Server
         run: |
+          chmod 700 ./mvnw
           ./mvnw clean package -Dtestskip
-        
-      - name: Show JDK Version
+      - name: show directory
         run: |
-          java --version
+          ls -a
+          cd ./target
+          ls -a
           
