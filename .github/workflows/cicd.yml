@@ -13,13 +13,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: github
+      - uses: actions/checkout@v3
+      - name: show directory
+        run: |
+          ls -a
       - name: test1
         run: |
           echo "test1 출력"
       - name: test2
         run: |
-          echo "test1 출력"
+          echo "test2 출력"
       - name: test3
         run: |
-          echo "test1 출력"
+          echo "test3 출력"
       
