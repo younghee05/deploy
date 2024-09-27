@@ -14,10 +14,10 @@ on:
           run: |
             echo "test1 출력"
         - name: test2
-            run: |
+          run: |
             echo "test2 출력"
         - name: test3
-            run: | 
+          run: | 
             echo "test3 출력"
         
         
