@@ -1,7 +1,6 @@
 FROM amazoncorretto:11-alpine-jdk
 ARG JAR_FILE=target/*.jar
 ARG PROFILES
-ARG ENV
 # target/*.jar 파일을 복사한것
 COPY ${JAR_FILE} app.jar
 
